@@ -13,7 +13,6 @@ public class pra_4 {
 
         for (int i = 1; i <= num; i++) {
             factorail = factorail * i;
-            System.out.println(factorail);
         }
 
         System.out.println("Factorail of " + num + " is " + factorail);
