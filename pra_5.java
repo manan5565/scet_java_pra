@@ -6,6 +6,8 @@ default values are 1.
 - A method named getArea() that returns the area of this triangle.
 - A method named getPerimeter() that returns the perimeter. */
 
+// Author :- Manan Koyawala
+
 import java.util.*;
 
 public class pra_5 {

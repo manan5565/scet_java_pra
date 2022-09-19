@@ -1,5 +1,6 @@
 // Write a program to find the factorial of a given number. Take the number through the 
 // command line argument.
+// Author : Manan Koyawala
 
 import java.util.*;
 

@@ -1,5 +1,6 @@
 // Write a program which takes two numbers and an operator from the user and performs 
 // mathematical operation on entered two numbers.
+// Author :- Manan Koyawala
 
 import java.util.*;
 

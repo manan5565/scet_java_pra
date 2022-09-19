@@ -1,5 +1,6 @@
-// Write a program that sorts the integer numbers taken from the user as an input.
 
+// Write a program that sorts the integer numbers taken from the user as an input.
+// Author :- Manan Koyawala
 import java.util.*;
 
 public class pra_2 {
