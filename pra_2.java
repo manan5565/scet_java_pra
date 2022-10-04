@@ -27,8 +27,8 @@ public class pra_2 {
             }
         }
         System.out.println("----- Sorted Elements are -----");
-        for (int j = 0; j < n; j++) {
-            System.out.println(numbers[j]);
+        for (int i = 0; i < n; i++) {
+            System.out.println(numbers[i]);
         }
         s.close();
 
