@@ -1,11 +1,11 @@
 public class pra_6 {
     public static void main(String[] args) throws Exception {
         StopWatch s = new StopWatch();
-        s.start(10);
+        s.start();
         for (int i = 0; i < 5; i++) {
             Thread.sleep(1750);
         }
-        s.end(30);
+        s.end();
         System.out.println("Start Time is " + s.getStartTime() + " seconds");
         System.out.println("End Time is " + s.getEndTime() + " seconds");
         System.out.println("Elapsed Time is " + s.getElapsedTime() + " seconds");
@@ -29,11 +29,11 @@ class StopWatch {
 
     }
 
-    public void start(float startTime) {
+    public void start() {
         this.startTime = System.currentTimeMillis();
     }
 
-    public void end(float endTime) {
+    public void end() {
         this.endTime = System.currentTimeMillis();
     }
 
