@@ -29,7 +29,7 @@ class Complex {
     public void addition(Complex c1, Complex c2) {
         Complex c = new Complex();
         c.real = c1.real + c2.real;
-        c.img = c.img + c.img;
+        c.img = c1.img + c2.img;
         System.out.println();
         System.out.println("2 Parameters Method Called :-");
         System.out.println("Addition of two Complex Number is:-");

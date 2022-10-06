@@ -2,40 +2,33 @@ import java.util.Scanner;
 
 public class pra_9 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        Student student = new Student();
-        int rollno;
-        String temp, add, branch;
-
-        System.out.println("Enter Student Details :- ");
-        System.out.printf("Roll no :");
-        rollno = scanner.nextInt();
-        System.out.printf("Name :");
-        temp = scanner.next();
-        System.out.printf("Address :");
-        add = scanner.next();
-        System.out.printf("Branch :");
-        branch = scanner.next();
-
-        student.getData(rollno, temp, add, branch);
-        student.showData();
-        scanner.close();
-
+        Student[] obj = new Student[2];
+        for (int i = 0; i < 2; i++) {
+            obj[i] = new Student();
+            obj[i].getData();
+        }
+        Student.branchDisplay(obj);
     }
 }
 
 class Student {
+    Scanner scanner = new Scanner(System.in);
+
     int roll_no;
     String name;
     String address;
     String branch;
 
-    public void getData(int r, String name, String add, String bra) {
-        this.roll_no = r;
-        this.name = name;
-        this.address = add;
-        this.branch = bra;
+    public void getData() {
+        System.out.println("\nEnter Student Details :- ");
+        System.out.printf("Roll no :");
+        this.roll_no = scanner.nextInt();
+        System.out.printf("Name :");
+        this.name = scanner.next();
+        System.out.printf("Address :");
+        this.address = scanner.next();
+        System.out.printf("Branch :");
+        this.branch = scanner.next();
     }
 
     public void showData() {
@@ -44,7 +37,16 @@ class Student {
                         + " , Branch = " + branch);
     }
 
-    static void branchDisplay(Student s) {
+    static void branchDisplay(Student[] s) { // static method called by classname.methodname
+        System.out.println("\nComputer Branch Students are :-");
+        for (int i = 0; i < s.length; i++) {
+            if (s[i].branch.equals("Computer") || s[i].branch.equals("computer")) {
+                System.out.println("Roll No : " + s[i].roll_no);
+                System.out.println("Name : " + s[i].name);
+                System.out.println("Address : " + s[i].address);
+                System.out.println("Branch : " + s[i].branch);
+            }
+        }
     }
 
 }
