@@ -1,4 +1,3 @@
-package extra;
 
 // Author :- Manan Koyawala
 // 1.1 - Write a Java Program to print Hello World.

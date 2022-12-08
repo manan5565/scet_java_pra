@@ -6,10 +6,8 @@ public class pra_8 {
         Complex c = new Complex();
         Complex c1 = new Complex(4, 5);
         Complex c2 = new Complex(10, 5);
-
         c.addition(c1, c2);
         c.addition(c1, c2, 1);
-
     }
 }
 
@@ -18,7 +16,6 @@ class Complex {
     int img;
 
     Complex() { // default cons.
-
     }
 
     Complex(int real, int img) {

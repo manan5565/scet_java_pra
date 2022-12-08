@@ -1,4 +1,3 @@
-package extra;
 
 // Author :- Manan Koyawala
 // 1.2 - Write a Java Program to find the area of a Triangle. (use static values)

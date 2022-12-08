@@ -1,4 +1,3 @@
-package extra;
 
 // Author :- Manan Koyawala
 // 1.3 - Write a program to find the distance that the light travels in 4520 days.
